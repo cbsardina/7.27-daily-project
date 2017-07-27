@@ -29,7 +29,7 @@ function smallNums(){
         }
     }
     return smallNums;
-}
+};
 
 
 /*
@@ -41,8 +41,7 @@ function addNums(){
     numbers.push(99);
     numbers.push(101);
     return numbers;
-}
-
+};
 
 
 /********************
@@ -65,7 +64,8 @@ let film = {
 function addBoxOffice(){
     film.boxoffice = 269061;
     return film;
-}
+};
+
 
 /*
 5. Add the name "Yukiko Shimazaki" to the "actors" array. Return "film";
@@ -73,7 +73,7 @@ function addBoxOffice(){
 function addActor(){
     film.actors.push("Yukiko Shimazaki");
     return film;
-}
+};
 
 /*
 6. Now that you've added a "boxoffice" property, subtract "budget" from "property" and return the difference. This number is the amount lost by the studio in making the film. Return the loss.
@@ -81,18 +81,14 @@ function addActor(){
 function getLosses(){
   let loss = film.boxoffice - film.budget;
   return loss;
-}
-
-
-
-
-
+};
 
 /*
 7. Iterate over "letterVals" and "numberVals". Concatenate the values from the two arrays and store the new values in the "vals" array. Return "vals".
 
 Your function should return [ "v5", "x67", "r34", "f456", "p78" ];
 */
+
 
 let numberVals = [ 5, 67, 34, 456, 78 ];
 let letterVals = [ "v", "x", "r", "f", "p" ];
@@ -103,7 +99,7 @@ function interleave(){
       vals[i] = letterVals[i] + numberVals[i];
     }
     return vals;
-}
+};
 
 
 /*
@@ -121,4 +117,4 @@ function union(){
       }
     }
     return same;
-}
+};
